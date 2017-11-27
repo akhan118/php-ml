@@ -48,14 +48,6 @@ class Normalizer implements Preprocessor
         $this->norm = $norm;
     }
 
-    /**
-     * @param array $samples
-     */
-    public function preprocess(array $samples)
-    {
-      $this->fit($samples);
-    }
-
     public function fit(array $samples): void
     {
         if ($this->fitted) {
